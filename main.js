@@ -16,8 +16,6 @@ createApp({
 
 
   mounted() {
-    debugMount() {
-        this.debugging = "vueApp mounted";
-    }
+    (this.debugging = "vueApp mounted")
   }
-}).mount('#app')
+}).mount('#vueApp')
