@@ -12,7 +12,17 @@ createApp({
 
 
   methods: {
-
+    cambiaStato(i) {
+      const element = document.querySelector("ul>li:nth-child("+(i+1)+")");
+      if (element.classList.contains("daFare")) {
+        element.classList.remove("daFare");
+        element.classList.add("completato");
+      }
+      else {
+        element.classList.remove("completato");
+        element.classList.add("daFare");
+      }
+    }
   },
 
 

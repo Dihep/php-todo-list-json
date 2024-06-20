@@ -14,7 +14,7 @@
     <div id="vueApp">
         <h1>Lista di compiti da fare</h1>
         <ul id="lista_compiti">
-            <li v-for="(compito, i) in compiti" class="task">
+            <li v-for="(compito, i) in compiti" class="task" @click="cambiaStato(i)">
                 <p class="statoCompito"> <!-- v-bind:class=" {(compito.statoTask=="to-do") ? "daFare" : "completato"} " -->
                     <span class="numeroCompito">{{i+1}}</span> 
                     <span>{{(compito.statoTask=="to-do") ? "Da fare" : "Completato"}}</span>
