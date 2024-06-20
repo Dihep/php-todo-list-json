@@ -16,10 +16,38 @@ HTML {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: 2rem;
 }
 
 H1 {
     padding: 0.5rem;
     border: 1px gray solid;
     border-radius: 0.5rem;
+}
+
+ul {
+    padding: 2rem;
+    background-color: rgb(30, 30, 30);
+    border-radius: 2rem;
+    list-style: none;
+}
+li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+.statoCompito {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.numeroCompito {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 1rem;
+    border: 1px solid white;
 }
